@@ -8,7 +8,6 @@ outputs/
 *.csv
 *.xlsx
 *.html
-*.png
 
 # Virtual environments
 .venv/
