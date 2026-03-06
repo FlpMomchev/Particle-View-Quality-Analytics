@@ -1,8 +1,9 @@
-# Industrial Particle Feature Analysis
+# Particle View Quality Analysis
 
-![Pipeline Overview](assets/pipeline_overview.png)
+![Pipeline Overview](assets/pipeline_overview.png?raw=true)
 
-This repository provides a self‑contained example of how to process and analyse particle‑level sensor data in an industrial context.  The code is broken into logical modules that can be reused for other manufacturing datasets.
+This repository provides a self‑contained example of how to process and analyse particle‑level sensor data in an industrial context.  The code is broken into logical modules that can be reused for other manufacturing datasets.  
+Due to confidentiality constraints, the repository uses anonymized sample data and a redacted project summary, while preserving the original analytical workflow and code structure.
 
 ## Overview
 
