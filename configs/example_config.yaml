@@ -1,0 +1,34 @@
+# Example configuration file for the particle analysis pipeline
+
+# Path to the particle‑level measurements CSV.  Use the sample data provided or point at your own file.
+particle_data: data/sample/particle_view_sample.csv
+
+# Path to the process log / material tracking CSV.  This file should contain at least
+# DATATIMESTAMP and MATERIALNO columns.  For demonstration a synthetic file is provided.
+process_data: data/sample/process_data_sample.csv
+
+# Path to the quality metrics CSV.  This file should contain SAMPLE_ID and one or more
+# target variables such as DENSITY_AVG, MOR_AVG, IB_AVG.  Again, a synthetic example is included.
+quality_data: data/sample/quality_data_sample.csv
+
+# Output directory for generated feature tables, filtered data and results.
+output_dir: outputs
+
+# Minimum and maximum number of particles per sample to keep.  Samples outside this range
+# will be dropped before feature aggregation.
+min_particles_per_sample: 100
+max_particles_per_sample: 10000
+
+# Threshold for outlier removal when standardising features (Z‑score).  Rows with any
+# feature exceeding this absolute Z‑score are discarded.  Set to null to disable.
+zscore_threshold: 3
+
+# Correlation targets.  These columns must exist in the quality_data CSV.  Leave the list empty
+# to skip correlation analysis.
+correlation_targets:
+  - DENSITY_AVG
+  - MOR_AVG
+  - IB_AVG
+
+# Whether to compute correlations separately for each MATERIALNO (True) or across all rows (False).
+material_specific_correlations: false

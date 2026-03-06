@@ -1,0 +1,21 @@
+# Byte‑compiled / cached files
+__pycache__/
+*.py[cod]
+*$$
+
+# Data and logs
+outputs/
+*.csv
+*.xlsx
+*.html
+*.png
+
+# Virtual environments
+.venv/
+
+# Jupyter notebooks
+*.ipynb
+
+# System files
+.DS_Store
+Thumbs.db
